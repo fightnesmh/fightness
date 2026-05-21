@@ -724,6 +724,28 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
   .launch-sticky-title{font-size:20px;}
   .launch-sticky-sub{font-size:13px;}
   .launch-sticky-code{font-size:14px;padding:8px 14px;}
+
+  .desktop-offer-title,
+  .desktop-offer-sub{
+    display:none;
+  }
+
+  .mobile-offer-title,
+  .mobile-offer-sub{
+    display:inline;
+  }
+}
+
+@media(min-width:769px){
+  .desktop-offer-title,
+  .desktop-offer-sub{
+    display:inline;
+  }
+
+  .mobile-offer-title,
+  .mobile-offer-sub{
+    display:none;
+  }
 }
 
 
@@ -914,10 +936,13 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
   <div class="launch-sticky-inner">
     <div class="launch-sticky-icon">🔥</div>
     <div>
-      <div class="launch-sticky-title">Offre de lancement — 5€/4 sem + 50€ de frais d'inscription offerts</div>
+      <div class="launch-sticky-title">
+        <span class="desktop-offer-title">Offre de lancement — 5€/4 sem + 50€ de frais d'inscription offerts</span>
+        <span class="mobile-offer-title">Offre de lancement — 5€/4 sem à vie + 50€ de frais d'inscription offerts</span>
+      </div>
       <div class="launch-sticky-sub">
-        <strong>5€ de remise</strong> toutes les 4 semaines pendant toute la durée de l'abonnement<br/>
-        Premier paiement qui vous donne accès aux cours proposés durant les travaux puis plus rien à régler jusqu'à l'ouverture de On Air SMH
+        <span class="desktop-offer-sub">5€ de remise toutes les 4 semaines à vie<br/>Premier paiement qui vous donne accès aux cours proposés durant les travaux puis plus rien à régler jusqu'à l'ouverture de On Air SMH</span>
+        <span class="mobile-offer-sub">Premier paiement qui vous donne accès aux cours proposés durant les travaux puis plus rien à régler jusqu'à l'ouverture de On Air SMH</span>
       </div>
     </div>
     <div class="launch-sticky-code">Code promo FIGHTNESS5</div>
