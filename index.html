@@ -642,6 +642,12 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
   text-align:center;
 }
 .launch-sticky-icon{font-size:34px;line-height:1;}
+
+@media(max-width:768px){
+  .launch-sticky-icon{
+    display:none;
+  }
+}
 .launch-sticky-title{
   font-family:'Barlow Condensed',sans-serif;
   font-size:24px;
@@ -1524,32 +1530,4 @@ window.addEventListener('scroll', () => {
   });
 
   // Promo launch price items (top grid)
-  document.querySelectorAll('.promo-item').forEach(el => {
-    el.style.cursor = "pointer";
-    el.addEventListener('click', () => window.open(url, "_blank"));
-  });
-
-  // Entire launch banner (top orange/red banner)
-  document.querySelectorAll('.promo-banner').forEach(el => {
-    el.style.cursor = "pointer";
-    el.addEventListener('click', () => window.open(url, "_blank"));
-  });
-
-  // Also make the big promo prices container clickable (fallback)
-  document.querySelectorAll('.promo-prices').forEach(el => {
-    el.style.cursor = "pointer";
-    el.addEventListener('click', () => window.open(url, "_blank"));
-  });
-})();
-</script>
-
-
-<script>
-function copyCode() {
-  navigator.clipboard.writeText("FIGHTNESS5");
-  alert("Code copié !");
-}
-</script>
-
-</body>
-</html>
+  document.querySelectorAll('.promo-item').forEach(el => 
