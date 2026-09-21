@@ -316,7 +316,7 @@ h2 span{color:var(--orange);}
 .acces-libre-desc{font-size:13px;color:#9A8F88;margin-top:2px;}
 
 /* TARIFS */
-.tarifs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px;}
+.tarifs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px;}
 .tarif-card{
   background:#2A2320;border:1px solid rgba(240,234,227,0.08);border-radius:8px;
   padding:24px 16px;text-align:center;transition:all .2s;position:relative;
@@ -1194,7 +1194,7 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 
 <!-- TARIFS NORMAUX -->
 <div class="reveal" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
-<div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9A8F88;">Nos tarifs</div>
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9A8F88;">Nos tarifs <span style="color:#FF7D1A;margin-left:8px;">· Sans engagement</span></div>
 <div style="background:rgba(232,93,4,0.10);border:1px solid rgba(232,93,4,0.25);border-radius:4px;padding:6px 14px;font-size:12px;color:#FF7D1A;font-weight:700;">🎁 Frais d'inscription offerts en ce moment</div>
 </div>
 <div class="tarifs-grid reveal">
@@ -1234,7 +1234,18 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <div class="price-cycle-small">soit 55€ / 4 semaines · sans engagement</div>
 </div>
 </div>
+<div class="tarif-card">
+<div class="tarif-seances">Carte 10 séances</div>
+<div class="tarif-prix">120€</div>
+<div class="tarif-cycle">soit 12€ / séance</div>
 </div>
+<div class="tarif-card">
+<div class="tarif-seances">1 séance</div>
+<div class="tarif-prix">15€</div>
+<div class="tarif-cycle">à l'unité</div>
+</div>
+</div>
+<div class="reveal" style="font-size:11px;color:#766D68;text-align:right;margin-top:-12px;margin-bottom:20px;line-height:1.4;">* Abonnements sans durée minimale d’engagement · résiliation avec un préavis de 8 semaines.</div>
 <!-- ON AIR -->
 <div class="onair-box reveal">
 <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;flex-wrap:wrap;">
