@@ -968,7 +968,18 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 #ps-biking .planning-zone:hover {
   background: rgba(255,255,255,0.04);
 }
-</style></head>
+</style>
+<style>
+/* Plannings plus compacts */
+.planning-visual{max-width:900px;margin-left:auto;margin-right:auto;}
+@media(max-width:768px){
+  .planning-visual{max-width:100%;overflow:hidden;}
+  .planning-visual img{min-width:0 !important;width:100% !important;height:auto;}
+  .planning-visual .auto-planning-tooltip-layer{min-width:0 !important;width:100% !important;}
+  .planning-updated{max-width:100%;margin-left:auto;margin-right:auto;}
+}
+</style>
+</head>
 <body>
 <!-- NAV -->
 <nav>
@@ -1067,21 +1078,7 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 </div>
 </section>
 <!-- PROMO BANNER -->
-<div class="launch-sticky-banner">
-<div class="launch-sticky-inner">
-<div class="launch-sticky-icon">🔥</div>
-<div>
-<div class="launch-sticky-title">
-<span class="desktop-offer-title">Offre de lancement — 5€/4 sem + 50€ de frais d'inscription offerts</span>
-<span class="mobile-offer-title">Offre de lancement — 5€/4 sem à vie + 50€ de frais d'inscription offerts</span>
-</div>
-<div class="launch-sticky-sub">
-<span class="desktop-offer-sub">5€ de remise toutes les 4 semaines à vie</span>
-</div>
-</div>
-<div class="launch-sticky-code">Code promo FIGHTNESS5</div>
-</div>
-</div>
+
 <!-- STUDIOS -->
 <section id="studios">
 <div class="section-inner">
@@ -1190,65 +1187,15 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <h2>Tarifs <span>clairs</span>,<br/>sans surprise</h2>
 <p class="section-sub">Facturation toutes les 4 semaines, sans engagement. Choisissez le nombre de séances qui correspond à votre rythme — chaque séance vous donne accès à <strong style="color:#F0EAE3;">n'importe quel cours</strong> : boxe, kickboxing, MMA, grappling, cardio boxing, RPM ou biking fitness, à votre convenance.</p>
 </div>
-<!-- OFFRE LANCEMENT -->
-<div class="launch-info-card reveal">
-<div class="launch-info-line launch-info-highlight">⏳ 5€ de réduction pour les 100 premiers adhérents</div>
-<div class="promo-grid launch-pricing-grid">
-<div class="promo-item">
-<div class="promo-seance">1 séance/sem</div>
-<div class="promo-ancien">25€</div>
-<div class="promo-nouveau">
-<div class="price-week">5€<span class="unit">/sem</span></div>
-<div class="price-cycle-small">soit 20€ / 4 semaines</div>
+<!-- FRAIS D'INSCRIPTION OFFERTS -->
+<div class="reveal" style="background:linear-gradient(135deg,rgba(200,16,46,0.10),rgba(232,93,4,0.08));border:1.5px solid rgba(232,93,4,0.30);border-radius:8px;padding:16px 20px;margin-bottom:20px;text-align:center;">
+<strong style="font-family:'Barlow Condensed',sans-serif;font-size:20px;text-transform:uppercase;letter-spacing:0.05em;color:#FF7D1A;">🎁 En ce moment : 50 € de frais d'inscription offerts</strong>
 </div>
-</div>
-<div class="promo-item featured">
-<div class="tarif-badge">Le plus populaire</div>
-<div class="promo-seance">2 séances/sem</div>
-<div class="promo-ancien">35€</div>
-<div class="promo-nouveau">
-<div class="price-week">7,50€<span class="unit">/sem</span></div>
-<div class="price-cycle-small">soit 30€ / 4 semaines</div>
-</div>
-</div>
-<div class="promo-item">
-<div class="promo-seance">3 séances/sem</div>
-<div class="promo-ancien">40€</div>
-<div class="promo-nouveau">
-<div class="price-week">8,75€<span class="unit">/sem</span></div>
-<div class="price-cycle-small">soit 35€ / 4 semaines</div>
-</div>
-</div>
-<div class="promo-item">
-<div class="promo-seance">4 séances/sem</div>
-<div class="promo-ancien">45€</div>
-<div class="promo-nouveau">
-<div class="price-week">10€<span class="unit">/sem</span></div>
-<div class="price-cycle-small">soit 40€ / 4 semaines</div>
-</div>
-</div>
-<div class="promo-item">
-<div class="promo-seance">Illimité</div>
-<div class="promo-ancien">55€</div>
-<div class="promo-nouveau">
-<div class="price-week">12,50€<span class="unit">/sem</span></div>
-<div class="price-cycle-small">soit 50€ / 4 semaines</div>
-</div>
-</div>
-</div>
-<div class="launch-info-line">
-        Utilise le code promo <span class="launch-info-code">FIGHTNESS5</span> lors de ton inscription 🔥
-      </div>
-<div class="launch-info-line">
-</div>
-<div class="launch-info-line">
-<strong style="color:#FF7D1A;">Frais d'inscription offerts</strong> (50€) — valable uniquement dans le cadre de l'offre de lancement.
-      </div>
-</div>
+
 <!-- TARIFS NORMAUX -->
 <div class="reveal" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
-<div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9A8F88;">Tarifs standards · hors offre de lancement</div>
-<div style="background:rgba(240,234,227,0.06);border:1px solid rgba(240,234,227,0.12);border-radius:4px;padding:6px 14px;font-size:12px;color:#9A8F88;">+ <strong style="color:#F0EAE3;">50€</strong> de frais d'inscription (une seule fois)</div>
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#9A8F88;">Nos tarifs</div>
+<div style="background:rgba(232,93,4,0.10);border:1px solid rgba(232,93,4,0.25);border-radius:4px;padding:6px 14px;font-size:12px;color:#FF7D1A;font-weight:700;">🎁 Frais d'inscription offerts en ce moment</div>
 </div>
 <div class="tarifs-grid reveal">
 <div class="tarif-card">
@@ -1473,7 +1420,7 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <div class="reveal">
 <div class="section-tag" style="justify-content:center;">Rejoindre le club</div>
 <h2>Prêt à <span>relever le défi</span> ?</h2>
-<p>Profitez de l'offre de lancement et commencez votre parcours avec Fightness Fight Club.</p>
+<p>Commencez votre parcours avec Fightness Fight Club.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
 <a class="btn-fire" href="#essai">
           Réserver ma séance d'essai
@@ -1744,11 +1691,6 @@ window.addEventListener('scroll', () => {
   });
 })();
 </script>
-<script>
-function copyCode() {
-  navigator.clipboard.writeText("FIGHTNESS5");
-  alert("Code copié !");
-}
-</script>
+
 </body>
 </html>
