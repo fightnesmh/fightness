@@ -978,6 +978,16 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
   .planning-visual .auto-planning-tooltip-layer{min-width:0 !important;width:100% !important;}
   .planning-updated{max-width:100%;margin-left:auto;margin-right:auto;}
 }
+
+/* CHALLENGE BIKING OCTOBRE — bandeau sticky compact */
+.biking-challenge-sticky{position:fixed;top:78px;left:0;right:0;z-index:190;background:linear-gradient(135deg,#C8102E,#E85D04);box-shadow:0 4px 16px rgba(0,0,0,.25);}
+.biking-challenge-sticky a{min-height:48px;padding:10px 20px;display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;color:#fff;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:16px;letter-spacing:.035em;text-transform:uppercase;}
+.biking-challenge-sticky .challenge-cta{padding:3px 9px;border-radius:3px;background:rgba(0,0,0,.22);white-space:nowrap;font-size:12px;letter-spacing:.06em;}
+.biking-challenge-card{border-color:var(--amber)!important;background:linear-gradient(135deg,rgba(244,161,22,.13),rgba(232,93,4,.08))!important;cursor:pointer;}
+.biking-challenge-card .tarif-seances{color:var(--amber);}
+.biking-challenge-card .tarif-prix{font-size:34px;color:#F0EAE3;}
+.biking-challenge-card .tarif-cycle{line-height:1.35;}
+@media(max-width:768px){.biking-challenge-sticky{top:78px}.biking-challenge-sticky a{min-height:42px;padding:8px 10px;font-size:13px;line-height:1.2;gap:6px}.biking-challenge-sticky .challenge-cta{font-size:10px;padding:3px 6px}}
 </style>
 </head>
 <body>
@@ -998,6 +1008,7 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <span></span><span></span><span></span>
 </div>
 </nav>
+<div class="biking-challenge-sticky"><a href="#tarifs" aria-label="Découvrir le Challenge Portes Ouvertes Biking">🚴 <strong>BIKING GRATUIT TOUT LE MOIS D’OCTOBRE 🔥</strong> Tente de gagner <strong>1 an de Fightness</strong> avec notre Challenge Biking ! <span class="challenge-cta">→ <strong>JE M’INSCRIS GRATUITEMENT</strong></span></a></div>
 <div class="mobile-menu" id="mobile-menu">
 <a href="#studios" onclick="toggleMenu()">Studios</a>
 <a href="#planning" onclick="toggleMenu()">Planning</a>
@@ -1198,6 +1209,12 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <div style="background:rgba(232,93,4,0.10);border:1px solid rgba(232,93,4,0.25);border-radius:4px;padding:6px 14px;font-size:12px;color:#FF7D1A;font-weight:700;">🎁 Frais d'inscription offerts en ce moment</div>
 </div>
 <div class="tarifs-grid reveal">
+<a class="tarif-card biking-challenge-card" href="https://fightness.sportigo.fr/buy" style="text-decoration:none;color:inherit;display:block;">
+<div class="tarif-badge" style="background:var(--amber);color:#181210;">Octobre</div>
+<div class="tarif-seances">Challenge Portes Ouvertes BIKING</div>
+<div class="tarif-prix">GRATUIT</div>
+<div class="tarif-cycle">RPM &amp; Biking Fitness tout le mois d’octobre · Cliquez pour vous inscrire</div>
+</a>
 <div class="tarif-card">
 <div class="tarif-seances">1 séance / semaine</div>
 <div class="tarif-prix">
