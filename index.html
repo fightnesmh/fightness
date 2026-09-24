@@ -1028,6 +1028,28 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
   .mobile-trial-top{font-size:11px;padding:7px 8px;}
 }
 </style>
+
+<style>
+/* Prix par séance — affichage compact et lisible */
+.tarif-card .price-week{
+  display:flex;align-items:baseline;justify-content:center;gap:5px;
+  font-size:40px !important;white-space:nowrap;letter-spacing:-.02em;
+}
+.tarif-card .price-week .unit{
+  font-size:14px !important;margin-left:0 !important;font-family:'Barlow',sans-serif;
+  font-weight:600;color:#9A8F88;letter-spacing:0;
+}
+.tarif-card .price-cycle-small{font-size:12px;line-height:1.35;margin-top:9px;}
+.tarif-card .price-basis{display:block;font-size:10px;opacity:.8;margin-top:3px;}
+@media(max-width:1100px){
+  .tarif-card .price-week{font-size:36px !important;gap:4px;}
+  .tarif-card .price-week .unit{font-size:12px !important;}
+}
+@media(max-width:480px){
+  .tarif-card .price-week{font-size:42px !important;}
+  .tarif-card .price-week .unit{font-size:14px !important;}
+}
+</style>
 </head>
 <body>
 <!-- NAV -->
@@ -1257,7 +1279,7 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <div class="tarif-card">
 <div class="tarif-seances">1 séance / semaine</div>
 <div class="tarif-prix">
-<div class="price-week">6,25€<span class="unit">/sem</span></div>
+<div class="price-week">6,25€<span class="unit">/séance</span></div>
 <div class="price-cycle-small">soit 25€ / 4 semaines · sans engagement</div>
 </div>
 </div>
@@ -1265,35 +1287,37 @@ footer{background:#120E0C;padding:40px;border-top:1px solid rgba(242,237,232,0.0
 <div class="tarif-badge">Le plus populaire</div>
 <div class="tarif-seances">2 séances / semaine</div>
 <div class="tarif-prix">
-<div class="price-week">8,75€<span class="unit">/sem</span></div>
+<div class="price-week">4,38€<span class="unit">/séance</span></div>
 <div class="price-cycle-small">soit 35€ / 4 semaines · sans engagement</div>
 </div>
 </div>
 <div class="tarif-card">
 <div class="tarif-seances">3 séances / semaine</div>
 <div class="tarif-prix">
-<div class="price-week">10€<span class="unit">/sem</span></div>
+<div class="price-week">3,33€<span class="unit">/séance</span></div>
 <div class="price-cycle-small">soit 40€ / 4 semaines · sans engagement</div>
 </div>
 </div>
 <div class="tarif-card">
 <div class="tarif-seances">4 séances / semaine</div>
 <div class="tarif-prix">
-<div class="price-week">11,25€<span class="unit">/sem</span></div>
+<div class="price-week">2,81€<span class="unit">/séance</span></div>
 <div class="price-cycle-small">soit 45€ / 4 semaines · sans engagement</div>
 </div>
 </div>
 <div class="tarif-card">
 <div class="tarif-seances">Illimité</div>
 <div class="tarif-prix">
-<div class="price-week">13,75€<span class="unit">/sem</span></div>
-<div class="price-cycle-small">soit 55€ / 4 semaines · sans engagement</div>
+<div class="price-week">1,96€<span class="unit">/séance</span></div>
+<div class="price-cycle-small">soit 55€ / 4 semaines · sans engagement<br/><span class="price-basis">* base de 7 séances / semaine</span></div>
 </div>
 </div>
 <div class="tarif-card">
 <div class="tarif-seances">Carte 10 séances</div>
-<div class="tarif-prix">120€</div>
-<div class="tarif-cycle">soit 12€ / séance</div>
+<div class="tarif-prix">
+<div class="price-week">12€<span class="unit">/séance</span></div>
+<div class="price-cycle-small">soit 120€ la carte de 10 séances</div>
+</div>
 </div>
 <div class="tarif-card">
 <div class="tarif-seances">1 séance</div>
